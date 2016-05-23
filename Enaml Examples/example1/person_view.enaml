@@ -8,12 +8,12 @@ enamldef PersonView(Window):
         Label:
             text = 'First Name'
         Field:
-            text = person.first_name
+            text := person.first_name
         Label:
             text = 'Last Name'
         Field:
-            text = person.last_name
+            text := person.last_name
         Label:
         	text = 'Full Name'
         Field:
-            text = person.first_name + ' ' + person.last_name
+            text << person.first_name + ' ' + person.last_name
